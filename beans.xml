@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<beans>
+	<bean id="A" class="ee.ut.A" action="test">
+		<field name="b" ref="B" />
+	</bean>
+	<bean id="B" class="ee.ut.B" action="bar">
+		<field name="c" ref="C" />
+	</bean>
+	<bean id="C" class="ee.ut.C" action="foo" />
+</beans>
